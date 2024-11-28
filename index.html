@@ -10,44 +10,46 @@
         background-image: url('ari background1.png');
       }
       
-  .topmenu {
-  overflow: hidden;
-  background-color: black;
-  top: -14;
-  left: -10;
-  position: relative;
-}
-
-.topmenu a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 30px 50px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topmenu a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topmenu a.active {
-  background-color: #04AA6D;
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        font-family: "Arial", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        
+      }
+      
+      li {
+        float: right;
+      }
+      
+      li a {
+  display: block;
   color: white;
+  padding: 27px;
+}
+
+li a:hover {
+  background-color: #111;
 }
 </style>
 </head>
 <body>
 
-<div class="topmenu">
-  <a class="active" href="#home">home</a>
-  <a href="#about">about</a>
-  <a href="#discography">discography</a>
-  <a href="#tours">tours</a>
-  </div>
-    </style>
-    <body>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
       
-    </body>
+    </style>
   </head>
+</html>
