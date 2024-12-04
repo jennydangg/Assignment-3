@@ -46,6 +46,28 @@
 li a:hover {
   color: #a7978e;
 }
+      
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #43372d;
+}
+
+.dropdown-content a {
+  color: #af836a;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #5c4a41;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
       .arianagrandelogo {
         color: white;
@@ -231,7 +253,12 @@ li a:hover {
 <body>
 
 <ul>
-  <li><a href="#tours">tours</a></li>
+  <li class="dropdown">
+    <a href="#tours" class="dropbtn">tours</a>
+    <div class="dropdown-content">
+      <a href="#sweetener tour">sweetener world tour</a>
+    </div>
+  </li>
   <li><a href="#discography">discography</a></li>
   <li><a href="https://jennydangg.github.io/assignment3-about/">about</a></li>
   <li><a href="https://jennydangg.github.io/Assignment-3/">home</a></li>
